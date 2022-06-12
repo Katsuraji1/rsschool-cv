@@ -1,9 +1,9 @@
 body {
 max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto ;
     background-color: gray;
-    margin-top: 5%;
-    height: 1200px;
+    margin-top: 2%;
+    height: 1300px;
     box-shadow: 5px 3px 4px 2px black;
     border: 1px solid black;
     margin-bottom: 5%;
@@ -12,14 +12,14 @@ max-width: 1200px;
 width: 30%;
 float: left;
 background-color: bisque;
-height: 1200px;
+height: 1260px;
 }
 
 .right-side{
 width: 70%;
 float: left;
 background-color: white;
-height: 1200px;
+height: 1260px;
 }
 
 .pic {
@@ -173,4 +173,39 @@ box-shadow: 0 0 10px black;
     font-size: medium;
 }
 
+.nav li {
+border: none;
+text-align: center;
+list-style: none;
+color: black;
+display:inline ;
+background:palevioletred;
+padding: 10px;
+box-shadow: 0px 0px 10px pink;
+transition: all 0.5s ease;
+}
 
+nav {
+    text-align: center;
+
+}
+
+a{
+text-decoration: none;
+color: black;
+text-shadow: 0px 0px 10px red;
+}
+ nav li:hover{
+    background-color:darkolivegreen;
+    box-shadow: 0px 0px 20px;
+}
+header{
+    background-color: darkgoldenrod;
+
+}
+
+.nav {
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 40px;
+}
