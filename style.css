@@ -1,0 +1,29 @@
+body {
+max-width: 1200px;
+    margin: 0 auto;
+    background-color: gray;
+    margin-top: 5%;
+}
+.left-side{
+width: 30%;
+float: left;
+background-color: bisque;
+}
+
+.right-side{
+width: 70%;
+float: left;
+background-color: white;
+}
+
+.pic {
+width: 80%;
+padding: 10%;
+background-color: black;
+}
+
+h1{
+    text-align: right;
+}
+
+
