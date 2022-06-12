@@ -17,32 +17,30 @@
       <section>
 <h2>CONTACTS</h2>
 <ul>
-    <li>verahovets@gmail.com</li>
-    <li>+375331230312</li>
-    <li>Main Street 1, NY, 12345</li>
+    <li><span>@gmail.com</span></li>
+    <li><span>+375331230312</span></li>
+    <li><span>Main Street 1, NY, 12345</span></li>
 </ul>
       </section>
       <section>
         <h2>SKILLS</h2>
         <ul>
-            <li>HTML5 <div class="cont"><div class="skill html"></div></div></li>
-            <li>CSS3 <div class="cont"><div class="skill css"></div></div></li>
-            <li>C++ <div class="cont"><div class="skill C"></div></div></li>
-            <li>JAVASCRIPT <div class="cont"><div class="skill js"></div></div></li>
-            <li>GIT <div class="cont"><div class="skill git"></div></div></li>
+            <li class="html5"><span>HTML5</span> <div class="cont"><div class="skill html"></div></div></li>
+            <li class="css3"><span>CSS3</span> <div class="cont"><div class="skill css"></div></div></li>
+            <li class="ci"><span>C++</span> <div class="cont"><div class="skill C"></div></div></li>
+            <li class="java"><span>JAVASCRIPT</span> <div class="cont"><div class="skill js"></div></div></li>
+            <li class="gi"><span>GIT</span> <div class="cont"><div class="skill git"></div></div></li>
         </ul>
       </section>
       <section>
         <h2>LENGUAGE</h2>
         <ul>
-            <li>English:B1-B2</li>
+            <li><span>English:B1-B2</span></li>
         </ul>
       </section>
     </div>
     <div class="right-side">
-        <header>
-            <H1>ERAHOVETS  VLADISLAV</H1>
-                </header>
+            <H1>ERAHOVETS  VLADISLAV</H1> 
                 <hr>
         <section>
             <h2>ABOUT ME</h2>
@@ -51,12 +49,58 @@
         <hr>
         <section>
             <h2>EDUCATION</h2>
+            <h3>Belarusian technical national university</h3>
+            <span class="education">Programming of intelligent systems:2020-2024</span>
+            <hr class="hr_2">
+            <h3>RS School</h3>
+            <span class="education">Front-end Developer</span>
         </section>
         <hr>
-        <section>
+        
+             <section>
             <h2>WORK EXPERIENCE</h2>
+            <div class="container">
+                <div class="right_side">
+                    <span class="date">01.01.2020-01.01.2022</span>
+                    <p class="date">EPAM</p>
+                </div>
+                <div class="left_side">
+                    <span class="role">Role:</span>
+                    <span class="dat">CEO EPAM</span>
+                </div>
+            </div>
+            <hr class="hr_2">
+            <div class="container">
+                <div class="right_side">
+                    <span class="date">01.01.2018-01.01.2020</span>
+                    <p class="date">IT Academy</p>
+                </div>
+                <div class="left_side">
+                    <span class="role">Role:</span>
+                    <span class="dat">CEO IT Academy</span>
+                </div>
+            </div>
         </section>
         <hr>
+        <h2>CODE EXAMPLE</h2>
+        <div class="code">
+        <pre><code class="pr">
+window.addEvent('load', function() { 
+    var regEmail = /\/([a-zA-Z0-9\-\.]+)\.m\.([a-zA-Z0-9\-\.]+)\/([a-zA-Z]{2,6})\//g; 
+    var list = document.getElementsByTagName('a');
+    for(var i=0; i      if(list[i].href.match(regEmail)) {
+        var str = list[i].href.replace(document.location.protocol + '//' + document.location.hostname, '');
+        str = str.replace(regEmail, '$1@$2.$3');
+        list[i].href = 'mailto:' + str;
+        list[i].innerHTML = el.innerHTML.replace(regEmail, '$1@$2.$3');
+    }
+    }
+    if(document.body.innerHTML.match(regEmail)) {
+    $document.body.innerHTML = document.body.innerHTML.replace(regEmail, '$1@$2.$3');
+    }
+});
+        </code></pre>
+    </div>
     </div>
 </div>
     </main>

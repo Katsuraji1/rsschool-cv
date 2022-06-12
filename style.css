@@ -3,7 +3,7 @@ max-width: 1200px;
     margin: 0 auto;
     background-color: gray;
     margin-top: 5%;
-    height: 900px;
+    height: 1200px;
     box-shadow: 5px 3px 4px 2px black;
     border: 1px solid black;
     margin-bottom: 5%;
@@ -12,20 +12,20 @@ max-width: 1200px;
 width: 30%;
 float: left;
 background-color: bisque;
-height: 900px;
+height: 1200px;
 }
 
 .right-side{
 width: 70%;
 float: left;
 background-color: white;
-height: 900px;
+height: 1200px;
 }
 
 .pic {
-width: 80%;
-padding: 10%;
+width: 100%;
 background-color:pink;
+box-shadow: 0 0 10px black;
 }
 
 h1{
@@ -35,13 +35,15 @@ h1{
 
 }
 
-p , h2 , ul {
+p, span , h2 , ul, h3  {
     margin-left: 20px;
     margin-right: 20px;
 }
 
 hr{
 width: 90%;
+height: 2px;
+background-color: black;
 }
 
 h2{
@@ -49,14 +51,23 @@ h2{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-p {
+span, p {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 li{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    list-style-type: circle;
-    font-size: large;
+list-style: disc;
+color: orange;
+margin-top: 5px;
+font-size: large;
+}
+
+li span{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+list-style: disc;
+color: black;
+font-size: large;
 }
 
 .cont{
@@ -98,3 +109,68 @@ background-color: magenta;
     width: 85%;
     background-color: turquoise;
 }
+
+h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    text-shadow: 1px 1px 1px black;
+}
+
+.education {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+.hr_2{
+    background-color: black;
+    width: 90%;
+    height: 0.5px;
+}
+
+.left_side{
+    width: 50%;
+    float: left;
+    }
+.right_side{
+ width: 50%;
+float: left;
+}
+
+.role{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: large;
+}
+
+.date{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-style: italic;
+    font-size: large;
+    margin-top: 1px;
+}
+
+.dat {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 0;
+    margin-right: 0;
+    font-style: italic;
+    font-size: large;
+}
+
+.code{
+    background-color: rgb(195, 192, 192);
+    margin-left: 20px;
+    margin-right: 20px;
+box-shadow: 0 0 10px black;
+}
+
+.pr{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+
+
