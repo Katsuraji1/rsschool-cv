@@ -67,7 +67,7 @@ span, p {
 }
 
 li{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+ font-family: Georgia, 'Times New Roman', Times, serif;
 list-style: disc;
 color: orange;
 margin-top: 5px;
@@ -255,3 +255,4 @@ transform: scale(1.1);
 .rslog{
     width: 150px;
 }
+
