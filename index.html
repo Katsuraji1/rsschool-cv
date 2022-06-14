@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/assest/img/apple-touch-icon.png" type="image/x-icon">
+    <title>CV</title>
+</head>
+<body>
+    <div class="wrapper">
+    <header>
+        <div class="header">
+        <nav>
+            <ul class="nav">
+                <li class="l"><a href="#aboutme">About me</a></li>
+                <li class="l"><a href="#education">Education</a></li>
+                <li class="l"><a href="#work">Work experience</a></li>
+                <li class="l"><a href="#code">Code example</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <main class="main">
+        <div class="container">
+        <div class="left-side">
+        <div>
+            <img class="pic" src="assest/img/im.jpg" alt="my photo">
+        </div>
+      <section>
+<h2>CONTACTS</h2>
+<ul>
+    <li><span>verahovets@gmail.com</span></li>
+    <li><span>+375331230312</span></li>
+    <li><span>Main Street 1, NY, 12345</span></li>
+</ul>
+      </section>
+      <section>
+        <h2>SKILLS</h2>
+        <ul>
+            <li class="html5"><span>HTML5</span> <div class="cont"><div class="skill html"></div></div></li>
+            <li class="css3"><span>CSS3</span> <div class="cont"><div class="skill css"></div></div></li>
+            <li class="ci"><span>C++</span> <div class="cont"><div class="skill C"></div></div></li>
+            <li class="java"><span>JAVASCRIPT</span> <div class="cont"><div class="skill js"></div></div></li>
+            <li class="gi"><span>GIT</span> <div class="cont"><div class="skill git"></div></div></li>
+        </ul>
+      </section>
+      <section>
+        <h2>LANGUAGE</h2>
+        <ul>
+            <li><span>English:A2-B1</span></li>
+        </ul>
+      </section>
+    </div>
+    <div class="right-side">
+            <H1>ERAHOVETS  VLADISLAV</H1> 
+                <hr>
+        <section>
+            <h2 id="aboutme">ABOUT ME</h2>
+            <p>I am a hard working, honest individual. I am a good timekeeper, always willing to learn new skills. I am friendly, helpful and polite, have a good sense of humour. I am able to work independently in busy environments and also within a team setting. I am outgoing and tactful, and able to listen effectively when solving problems.</p>
+        </section>
+        <hr>
+        <section>
+            <h2 id="education">EDUCATION</h2>
+            <h3>Belarusian technical national university</h3>
+            <span class="education">Programming of intelligent systems:2020-2024</span>
+            <hr class="hr_2">
+            <h3>RS School</h3>
+            <span class="education">Front-end Developer</span>
+        </section>
+        <hr>
+        
+             <section>
+            <h2 id="work">WORK EXPERIENCE</h2>
+            <div class="container">
+                <div class="right_side">
+                    <span class="date">01.01.2020-01.01.2022</span>
+                    <p class="date">EPAM</p>
+                </div>
+                <div class="left_side">
+                    <span class="role">Role:</span>
+                    <span class="dat">CEO EPAM</span>
+                </div>
+            </div>
+            <hr class="hr_2">
+            <div class="container">
+                <div class="right_side">
+                    <span class="date">01.01.2018-01.01.2020</span>
+                    <p class="date">IT Academy</p>
+                </div>
+                <div class="left_side">
+                    <span class="role">Role:</span>
+                    <span class="dat">CEO IT Academy</span>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <h2 id="code">CODE EXAMPLE</h2>
+        <div class="code">
+        <pre><code class="pr">
+window.addEvent('load', function() { 
+    var regEmail = /\/([a-zA-Z0-9\-\.]+)\.m\.([a-zA-Z0-9\-\.]+)\/([a-zA-Z]{2,6})\//g; 
+    var list = document.getElementsByTagName('a');
+    for(var i=0; i      if(list[i].href.match(regEmail)) {
+        var str = list[i].href.replace(document.location.protocol + '//' + document.location.hostname, '');
+        str = str.replace(regEmail, '$1@$2.$3');
+        list[i].href = 'mailto:' + str;
+        list[i].innerHTML = el.innerHTML.replace(regEmail, '$1@$2.$3');
+    }
+    }
+    if(document.body.innerHTML.match(regEmail)) {
+    $document.body.innerHTML = document.body.innerHTML.replace(regEmail, '$1@$2.$3');
+    }
+});
+        </code>
+    </pre>
+    
+    </div>
+    </div>
+</div>
+    </main>
+    <footer class="footer">
+        <div class="footer_content">
+           <a class="gt" href="https://github.com/Katsuraji1" target="_blank"><img  src="assest/img/GitHub-Mark.png" alt="git"></a>
+           <a class="gt" href="https://rs.school/js/" target="_blank"><img  class="rslog" src="assest/svg/rs_school_js.svg" alt="rs app"></a>
+           <span class="year">2022</span>
+</div>
+    </footer>
+</div>
+</body>
+</html>
